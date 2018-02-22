@@ -17,6 +17,10 @@ namespace WRS.Models
         public DbSet<TypeOfEmployee> TypeOfEmployees { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<EmployeeDepartment> EmployeeDepartments { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<EmployeeRenumeration> EmployeeRenumerations { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<WorkTime> WorkTimes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

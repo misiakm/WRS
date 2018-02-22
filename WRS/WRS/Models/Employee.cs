@@ -35,5 +35,11 @@ namespace WRS.Models
 
         [ForeignKey("Employee")]
         public virtual ICollection<EmployeeDepartment> Departments { get; set; }
+
+        [ForeignKey("Employee")]
+        public virtual ICollection<EmployeeRenumeration> Renumerations { get; set; }
+
+        [ForeignKey("Employee")]
+        public virtual ICollection<WorkTime> WorkTimes { get; set; }
     }
 }

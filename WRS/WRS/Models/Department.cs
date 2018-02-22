@@ -21,5 +21,8 @@ namespace WRS.Models
 
         [ForeignKey("Department")]
         public virtual ICollection<EmployeeDepartment> Employees { get; set; }
+
+        [ForeignKey("Department")]
+        public virtual ICollection<WorkTime> WorkTimes { get; set; }
     }
 }

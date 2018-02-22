@@ -133,15 +133,29 @@
     <Compile Include="Migrations\201802221907237_stworzenieSlownikowIPracownikow.Designer.cs">
       <DependentUpon>201802221907237_stworzenieSlownikowIPracownikow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802222059371_NextTable_Orders.cs" />
+    <Compile Include="Migrations\201802222059371_NextTable_Orders.Designer.cs">
+      <DependentUpon>201802222059371_NextTable_Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802222101455_NextTable_Orders2.cs" />
+    <Compile Include="Migrations\201802222101455_NextTable_Orders2.Designer.cs">
+      <DependentUpon>201802222101455_NextTable_Orders2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.cs" />
+    <Compile Include="Migrations\201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.Designer.cs">
+      <DependentUpon>201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\EmployeeDepartment.cs" />
+    <Compile Include="Models\EmployeeRenumeration.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\StatusOfOrder.cs" />
     <Compile Include="Models\TypeOfCustomer.cs" />
     <Compile Include="Models\TypeOfEmployee.cs" />
+    <Compile Include="Models\WorkTime.cs" />
     <Compile Include="Models\WRSDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -163,6 +177,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802221907237_stworzenieSlownikowIPracownikow.resx">
       <DependentUpon>201802221907237_stworzenieSlownikowIPracownikow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222059371_NextTable_Orders.resx">
+      <DependentUpon>201802222059371_NextTable_Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222101455_NextTable_Orders2.resx">
+      <DependentUpon>201802222101455_NextTable_Orders2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.resx">
+      <DependentUpon>201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
