@@ -25,7 +25,9 @@ namespace WRS.Models
         [Required]
         public DateTime WorkDate { get; set; }
 
-        public string comment { get; set; }
+        public double Amount { get; set; }
+
+        public string Comment { get; set; }
 
         public DateTime DateOfAdd { get; set; } = DateTime.Now;
     }

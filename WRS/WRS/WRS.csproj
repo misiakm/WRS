@@ -104,8 +104,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="JS\Jquery.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
@@ -126,9 +148,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\DatabaseConnect.cs" />
+    <Compile Include="Logic\Logs.cs" />
+    <Compile Include="Logic\WorkTimes.cs" />
     <Compile Include="Migrations\201802221907237_stworzenieSlownikowIPracownikow.cs" />
     <Compile Include="Migrations\201802221907237_stworzenieSlownikowIPracownikow.Designer.cs">
       <DependentUpon>201802221907237_stworzenieSlownikowIPracownikow.cs</DependentUpon>
@@ -145,7 +173,21 @@
     <Compile Include="Migrations\201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.Designer.cs">
       <DependentUpon>201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802222122265_AddAmmountToWorkTime.cs" />
+    <Compile Include="Migrations\201802222122265_AddAmmountToWorkTime.Designer.cs">
+      <DependentUpon>201802222122265_AddAmmountToWorkTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802231501009_ChangesInDatabase.cs" />
+    <Compile Include="Migrations\201802231501009_ChangesInDatabase.Designer.cs">
+      <DependentUpon>201802231501009_ChangesInDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802251845100_SprawdzenieBazyDanych.cs" />
+    <Compile Include="Migrations\201802251845100_SprawdzenieBazyDanych.Designer.cs">
+      <DependentUpon>201802251845100_SprawdzenieBazyDanych.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ModelsViews\LoginPage.cs" />
+    <Compile Include="ModelsViews\WorkTimesTable.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -172,7 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Views\Employees\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802221907237_stworzenieSlownikowIPracownikow.resx">
@@ -186,6 +228,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.resx">
       <DependentUpon>201802222104218_AddCommentToWorkTimeAndRelationStatusToOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802222122265_AddAmmountToWorkTime.resx">
+      <DependentUpon>201802222122265_AddAmmountToWorkTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802231501009_ChangesInDatabase.resx">
+      <DependentUpon>201802231501009_ChangesInDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802251845100_SprawdzenieBazyDanych.resx">
+      <DependentUpon>201802251845100_SprawdzenieBazyDanych.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

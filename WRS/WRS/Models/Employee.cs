@@ -22,6 +22,11 @@ namespace WRS.Models
         [DisplayFormat(DataFormatString = "{0:###-###-####}")]
         public string PhoneNumber { get; set; }
 
+        public string Login { get; set; }
+
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
         [EmailAddress(ErrorMessage = "Podaj prawidłowy adres mailowy")]
         public string Email { get; set; }
 
